@@ -1,0 +1,14 @@
+{
+    "name": "nth-rocks",
+    "description": "",
+    "private": true,
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-autoprefixer": "^2.3.1",
+        "gulp-concat": "^2.6.0",
+        "gulp-load-plugins": "^0.10.0",
+        "gulp-sass": "^2.0.3",
+        "gulp-size": "^1.2.3",
+        "gulp-sourcemaps": "^1.5.2"
+    }
+}
