@@ -1,5 +1,6 @@
 .#{$nth-phone-prefix}-1 {
 	> * {
+		width: 100%;
 		clear: none;
 	}
 }
@@ -7,8 +8,12 @@
 $items: 2;
 @while $items < 10 {
 	.#{$nth-phone-prefix}-#{$items} {
+		$width: 100 / $items;
 
 		> * {
+			width: #{$width}%;
+			clear: none;
+
 			&:nth-child(#{$items}n+1) {
 				clear: both;
 			}
@@ -24,15 +29,27 @@ $items: 2;
 
 	.#{$nth-tablet-prefix}-1 {
 		> * {
+			width: 100%;
 			clear: none;
 		}
 	}
 
 	$items: 2;
 	@while $items < 10 {
+		.#{$nth-phone-prefix}-#{$items} {
+			> * {
+				&:nth-child(#{$items}n+1) {
+					clear: none;
+				}
+			}
+		}
+
 		.#{$nth-tablet-prefix}-#{$items} {
+			$width: 100 / $items;
 
 			> * {
+				width: #{$width}%;
+
 				&:nth-child(#{$items}n+1) {
 					clear: both;
 				}
@@ -49,15 +66,28 @@ $items: 2;
 
 	.#{$nth-desktop-prefix}-1 {
 		> * {
+			width: 100%;
 			clear: none;
 		}
 	}
 
 	$items: 2;
 	@while $items < 10 {
+		.#{$nth-phone-prefix}-#{$items},
+		.#{$nth-tablet-prefix}-#{$items} {
+			> * {
+				&:nth-child(#{$items}n+1) {
+					clear: none;
+				}
+			}
+		}
+
 		.#{$nth-desktop-prefix}-#{$items} {
+			$width: 100 / $items;
 
 			> * {
+				width: #{$width}%;
+
 				&:nth-child(#{$items}n+1) {
 					clear: both;
 				}
@@ -74,15 +104,29 @@ $items: 2;
 
 	.#{$nth-larger-desktop-prefix}-1 {
 		> * {
+			width: 100%;
 			clear: none;
 		}
 	}
 
 	$items: 2;
 	@while $items < 10 {
+		.#{$nth-phone-prefix}-#{$items},
+		.#{$nth-tablet-prefix}-#{$items},
+		.#{$nth-desktop-prefix}-#{$items} {
+			> * {
+				&:nth-child(#{$items}n+1) {
+					clear: none;
+				}
+			}
+		}
+
 		.#{$nth-larger-desktop-prefix}-#{$items} {
+			$width: 100 / $items;
 
 			> * {
+				width: #{$width}%;
+
 				&:nth-child(#{$items}n+1) {
 					clear: both;
 				}
