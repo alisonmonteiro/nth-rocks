@@ -1,7 +1,4 @@
-.#{$nth-phone-prefix}-1,
-.#{$nth-tablet-prefix}-1,
-.#{$nth-desktop-prefix}-1,
-.#{$nth-larger-desktop-prefix}-1 {
+.#{$nth-phone-prefix}-1 {
 	> * {
 		clear: none;
 	}
@@ -9,10 +6,7 @@
 
 $items: 2;
 @while $items < 10 {
-	.#{$nth-phone-prefix}-#{$items},
-	.#{$nth-tablet-prefix}-#{$items},
-	.#{$nth-desktop-prefix}-#{$items},
-	.#{$nth-larger-desktop-prefix}-#{$items} {
+	.#{$nth-phone-prefix}-#{$items} {
 
 		> * {
 			&:nth-child(#{$items}n+1) {
@@ -23,4 +17,79 @@ $items: 2;
 	}
 
 	$items: $items + 1;
+}
+
+
+@media (min-width: $nth-tablet-width-min) {
+
+	.#{$nth-tablet-prefix}-1 {
+		> * {
+			clear: none;
+		}
+	}
+
+	$items: 2;
+	@while $items < 10 {
+		.#{$nth-tablet-prefix}-#{$items} {
+
+			> * {
+				&:nth-child(#{$items}n+1) {
+					clear: both;
+				}
+			}
+
+		}
+
+		$items: $items + 1;
+	}
+}
+
+
+@media (min-width: $nth-desktop-width-min) {
+
+	.#{$nth-desktop-prefix}-1 {
+		> * {
+			clear: none;
+		}
+	}
+
+	$items: 2;
+	@while $items < 10 {
+		.#{$nth-desktop-prefix}-#{$items} {
+
+			> * {
+				&:nth-child(#{$items}n+1) {
+					clear: both;
+				}
+			}
+
+		}
+
+		$items: $items + 1;
+	}
+}
+
+
+@media (min-width: $nth-larger-desktop-width-min) {
+
+	.#{$nth-larger-desktop-prefix}-1 {
+		> * {
+			clear: none;
+		}
+	}
+
+	$items: 2;
+	@while $items < 10 {
+		.#{$nth-larger-desktop-prefix}-#{$items} {
+
+			> * {
+				&:nth-child(#{$items}n+1) {
+					clear: both;
+				}
+			}
+
+		}
+
+		$items: $items + 1;
+	}
 }

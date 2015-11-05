@@ -2,3 +2,8 @@ $nth-phone-prefix: 			nth-phone !default;
 $nth-tablet-prefix: 		nth-tablet !default;
 $nth-desktop-prefix: 		nth-desktop !default;
 $nth-larger-desktop-prefix: nth-larger-desktop !default;
+
+
+$nth-tablet-width-min: 768px !default;
+$nth-desktop-width-min: 1024px !default;
+$nth-larger-desktop-width-min: 1200px !default;
