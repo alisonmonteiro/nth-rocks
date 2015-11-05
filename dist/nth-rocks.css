@@ -1,0 +1,55 @@
+.nth-phone-1 > *,
+.nth-tablet-1 > *,
+.nth-desktop-1 > *,
+.nth-larger-desktop-1 > * {
+  clear: none; }
+
+.nth-phone-2 > *:nth-child(3n+1),
+.nth-tablet-2 > *:nth-child(3n+1),
+.nth-desktop-2 > *:nth-child(3n+1),
+.nth-larger-desktop-2 > *:nth-child(3n+1) {
+  clear: both; }
+
+.nth-phone-3 > *:nth-child(4n+1),
+.nth-tablet-3 > *:nth-child(4n+1),
+.nth-desktop-3 > *:nth-child(4n+1),
+.nth-larger-desktop-3 > *:nth-child(4n+1) {
+  clear: both; }
+
+.nth-phone-4 > *:nth-child(5n+1),
+.nth-tablet-4 > *:nth-child(5n+1),
+.nth-desktop-4 > *:nth-child(5n+1),
+.nth-larger-desktop-4 > *:nth-child(5n+1) {
+  clear: both; }
+
+.nth-phone-5 > *:nth-child(6n+1),
+.nth-tablet-5 > *:nth-child(6n+1),
+.nth-desktop-5 > *:nth-child(6n+1),
+.nth-larger-desktop-5 > *:nth-child(6n+1) {
+  clear: both; }
+
+.nth-phone-6 > *:nth-child(7n+1),
+.nth-tablet-6 > *:nth-child(7n+1),
+.nth-desktop-6 > *:nth-child(7n+1),
+.nth-larger-desktop-6 > *:nth-child(7n+1) {
+  clear: both; }
+
+.nth-phone-7 > *:nth-child(8n+1),
+.nth-tablet-7 > *:nth-child(8n+1),
+.nth-desktop-7 > *:nth-child(8n+1),
+.nth-larger-desktop-7 > *:nth-child(8n+1) {
+  clear: both; }
+
+.nth-phone-8 > *:nth-child(9n+1),
+.nth-tablet-8 > *:nth-child(9n+1),
+.nth-desktop-8 > *:nth-child(9n+1),
+.nth-larger-desktop-8 > *:nth-child(9n+1) {
+  clear: both; }
+
+.nth-phone-9 > *:nth-child(10n+1),
+.nth-tablet-9 > *:nth-child(10n+1),
+.nth-desktop-9 > *:nth-child(10n+1),
+.nth-larger-desktop-9 > *:nth-child(10n+1) {
+  clear: both; }
+
+/*# sourceMappingURL=nth-rocks.css.map */

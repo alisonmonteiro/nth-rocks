@@ -1,0 +1,27 @@
+.#{$nth-phone-prefix}-1,
+.#{$nth-tablet-prefix}-1,
+.#{$nth-desktop-prefix}-1,
+.#{$nth-larger-desktop-prefix}-1 {
+	> * {
+		clear: none;
+	}
+}
+
+$items: 2;
+@while $items < 10 {
+	.#{$nth-phone-prefix}-#{$items},
+	.#{$nth-tablet-prefix}-#{$items},
+	.#{$nth-desktop-prefix}-#{$items},
+	.#{$nth-larger-desktop-prefix}-#{$items} {
+		$nth-item: $items + 1;
+
+		> * {
+			&:nth-child(#{$nth-item}n+1) {
+				clear: both;
+			}
+		}
+
+	}
+
+	$items: $items + 1;
+}
