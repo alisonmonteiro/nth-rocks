@@ -13,10 +13,9 @@ $items: 2;
 	.#{$nth-tablet-prefix}-#{$items},
 	.#{$nth-desktop-prefix}-#{$items},
 	.#{$nth-larger-desktop-prefix}-#{$items} {
-		$nth-item: $items + 1;
 
 		> * {
-			&:nth-child(#{$nth-item}n+1) {
+			&:nth-child(#{$items}n+1) {
 				clear: both;
 			}
 		}
