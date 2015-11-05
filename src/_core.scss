@@ -1,21 +1,19 @@
-.#{$nth-phone-prefix}-1 {
-	> * {
-		width: 100%;
-		clear: none;
-	}
-}
-
-$items: 2;
-@while $items < 10 {
+$items: 1;
+@while $items < $max-items-loop  {
 	.#{$nth-phone-prefix}-#{$items} {
-		$width: 100 / $items;
+
+		$width: 100% / $items;
 
 		> * {
-			width: #{$width}%;
-			clear: none;
+			@if $items == 1 {
+				clear: none;
+				width: 100%;
+			} @else {
+				width: $width;
 
-			&:nth-child(#{$items}n+1) {
-				clear: both;
+				&:nth-child(#{$items}n+1) {
+					clear: both;
+				}
 			}
 		}
 
@@ -24,34 +22,33 @@ $items: 2;
 	$items: $items + 1;
 }
 
-
 @media (min-width: $nth-tablet-width-min) {
 
-	.#{$nth-tablet-prefix}-1 {
-		> * {
-			width: 100%;
-			clear: none;
-		}
-	}
-
-	$items: 2;
-	@while $items < 10 {
+	$items: 1;
+	@while $items < $max-items-loop  {
 		.#{$nth-phone-prefix}-#{$items} {
 			> * {
-				&:nth-child(#{$items}n+1) {
-					clear: none;
+				@if $items > 1 {
+					&:nth-child(#{$items}n+1) {
+						clear: none;
+					}
 				}
 			}
 		}
 
 		.#{$nth-tablet-prefix}-#{$items} {
-			$width: 100 / $items;
+			$width: 100% / $items;
 
 			> * {
-				width: #{$width}%;
+				@if $items == 1 {
+					clear: none;
+					width: 100%;
+				} @else {
+					width: $width;
 
-				&:nth-child(#{$items}n+1) {
-					clear: both;
+					&:nth-child(#{$items}n+1) {
+						clear: both;
+					}
 				}
 			}
 
@@ -61,35 +58,34 @@ $items: 2;
 	}
 }
 
-
 @media (min-width: $nth-desktop-width-min) {
 
-	.#{$nth-desktop-prefix}-1 {
-		> * {
-			width: 100%;
-			clear: none;
-		}
-	}
-
-	$items: 2;
-	@while $items < 10 {
+	$items: 1;
+	@while $items < $max-items-loop  {
 		.#{$nth-phone-prefix}-#{$items},
 		.#{$nth-tablet-prefix}-#{$items} {
 			> * {
-				&:nth-child(#{$items}n+1) {
-					clear: none;
+				@if $items > 1 {
+					&:nth-child(#{$items}n+1) {
+						clear: none;
+					}
 				}
 			}
 		}
 
 		.#{$nth-desktop-prefix}-#{$items} {
-			$width: 100 / $items;
+			$width: 100% / $items;
 
 			> * {
-				width: #{$width}%;
+				@if $items == 1 {
+					clear: none;
+					width: 100%;
+				} @else {
+					width: $width;
 
-				&:nth-child(#{$items}n+1) {
-					clear: both;
+					&:nth-child(#{$items}n+1) {
+						clear: both;
+					}
 				}
 			}
 
@@ -99,39 +95,37 @@ $items: 2;
 	}
 }
 
-
 @media (min-width: $nth-larger-desktop-width-min) {
 
-	.#{$nth-larger-desktop-prefix}-1 {
-		> * {
-			width: 100%;
-			clear: none;
-		}
-	}
-
-	$items: 2;
-	@while $items < 10 {
+	$items: 1;
+	@while $items < $max-items-loop  {
 		.#{$nth-phone-prefix}-#{$items},
 		.#{$nth-tablet-prefix}-#{$items},
 		.#{$nth-desktop-prefix}-#{$items} {
 			> * {
-				&:nth-child(#{$items}n+1) {
-					clear: none;
+				@if $items > 1 {
+					&:nth-child(#{$items}n+1) {
+						clear: none;
+					}
 				}
 			}
 		}
 
 		.#{$nth-larger-desktop-prefix}-#{$items} {
-			$width: 100 / $items;
+			$width: 100% / $items;
 
 			> * {
-				width: #{$width}%;
+				@if $items == 1 {
+					clear: none;
+					width: 100%;
+				} @else {
+					width: $width;
 
-				&:nth-child(#{$items}n+1) {
-					clear: both;
+					&:nth-child(#{$items}n+1) {
+						clear: both;
+					}
 				}
 			}
-
 		}
 
 		$items: $items + 1;
