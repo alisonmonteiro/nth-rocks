@@ -2,8 +2,8 @@
 
 Biblioteca em SCSS que permite a utilização de várias colunas com alturas diferentes, sem que as mesmas quebrem, ou sem comportem de forma inadequada.
 
-![com](link)
-![sem](link)
+![com](https://raw.githubusercontent.com/alisonmonteiro/nth-rocks/master/example/com.jpg)
+![sem](https://raw.githubusercontent.com/alisonmonteiro/nth-rocks/master/example/sem.jpg)
 
 ## Usage
 Exemplo: https://github.com/alisonmonteiro/nth-rocks/blob/master/example/index.html
