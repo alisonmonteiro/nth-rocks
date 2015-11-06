@@ -22,6 +22,11 @@
   .nth-phone-5 > *:nth-child(5n+1) {
     clear: both; }
 
+.nth-phone-6 > * {
+  width: 16.6666666667%; }
+  .nth-phone-6 > *:nth-child(6n+1) {
+    clear: both; }
+
 @media (min-width: 768px) {
   .nth-tablet-1 > * {
     clear: none;
@@ -49,6 +54,12 @@
   .nth-tablet-5 > * {
     width: 20%; }
     .nth-tablet-5 > *:nth-child(5n+1) {
+      clear: both; }
+  .nth-phone-6 > *:nth-child(6n+1) {
+    clear: none; }
+  .nth-tablet-6 > * {
+    width: 16.6666666667%; }
+    .nth-tablet-6 > *:nth-child(6n+1) {
       clear: both; } }
 
 @media (min-width: 1024px) {
@@ -82,6 +93,13 @@
   .nth-desktop-5 > * {
     width: 20%; }
     .nth-desktop-5 > *:nth-child(5n+1) {
+      clear: both; }
+  .nth-phone-6 > *:nth-child(6n+1),
+  .nth-tablet-6 > *:nth-child(6n+1) {
+    clear: none; }
+  .nth-desktop-6 > * {
+    width: 16.6666666667%; }
+    .nth-desktop-6 > *:nth-child(6n+1) {
       clear: both; } }
 
 @media (min-width: 1200px) {
@@ -119,6 +137,14 @@
   .nth-larger-desktop-5 > * {
     width: 20%; }
     .nth-larger-desktop-5 > *:nth-child(5n+1) {
+      clear: both; }
+  .nth-phone-6 > *:nth-child(6n+1),
+  .nth-tablet-6 > *:nth-child(6n+1),
+  .nth-desktop-6 > *:nth-child(6n+1) {
+    clear: none; }
+  .nth-larger-desktop-6 > * {
+    width: 16.6666666667%; }
+    .nth-larger-desktop-6 > *:nth-child(6n+1) {
       clear: both; } }
 
 /*# sourceMappingURL=nth-rocks.css.map */
