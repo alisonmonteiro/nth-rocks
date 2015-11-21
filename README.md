@@ -1,6 +1,6 @@
 # nth-rocks
 
-Biblioteca em SCSS que permite a utilização de várias colunas com alturas diferentes, sem que as mesmas quebrem, ou sem comportem de forma inadequada.
+Biblioteca em SCSS que permite a utilização de várias colunas com alturas diferentes, sem que as mesmas quebrem, ou se comportem de forma inadequada.
 
 #### Com
 ![com](https://raw.githubusercontent.com/alisonmonteiro/nth-rocks/master/example/com.png)
@@ -9,8 +9,7 @@ Biblioteca em SCSS que permite a utilização de várias colunas com alturas dif
 
 ## Utilização
 
-#### Adicionando as classes
-Você pode utilizar as classes ao seu elemento com a seguinte estrutura:
+Você pode adicionar as classes ao seu elemento com a seguinte estrutura:
 - [Prefixo da resolução desejada]-[Quantidade de colunas esta resolução]
 
 Tudo deve funcionar muito bem!
@@ -28,4 +27,5 @@ Veja um exemplo: https://github.com/alisonmonteiro/nth-rocks/blob/master/example
 - [ ] Add github-page
 - [ ] Add bower.json
 - [ ] Add opção `nth-rocks.less`
+- [ ] Short classes
 - [Ver issues](https://github.com/alisonmonteiro/nth-rocks/issues)
