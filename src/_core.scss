@@ -5,6 +5,8 @@ $items: 1;
 		$width: 100% / $items;
 
 		> * {
+			float: left;
+
 			@if $items == 1 {
 				clear: none;
 				width: 100%;
