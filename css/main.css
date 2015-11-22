@@ -1,0 +1,154 @@
+.nth-phone-1 > * {
+  float: left;
+  clear: none;
+  width: 100%; }
+
+.nth-phone-2 > * {
+  float: left;
+  width: 50%; }
+  .nth-phone-2 > *:nth-child(2n+1) {
+    clear: both; }
+
+.nth-phone-3 > * {
+  float: left;
+  width: 33.3333333333%; }
+  .nth-phone-3 > *:nth-child(3n+1) {
+    clear: both; }
+
+.nth-phone-4 > * {
+  float: left;
+  width: 25%; }
+  .nth-phone-4 > *:nth-child(4n+1) {
+    clear: both; }
+
+.nth-phone-5 > * {
+  float: left;
+  width: 20%; }
+  .nth-phone-5 > *:nth-child(5n+1) {
+    clear: both; }
+
+.nth-phone-6 > * {
+  float: left;
+  width: 16.6666666667%; }
+  .nth-phone-6 > *:nth-child(6n+1) {
+    clear: both; }
+
+@media (min-width: 768px) {
+  .nth-tablet-1 > * {
+    clear: none;
+    width: 100%; }
+  .nth-phone-2 > *:nth-child(2n+1) {
+    clear: none; }
+  .nth-tablet-2 > * {
+    width: 50%; }
+    .nth-tablet-2 > *:nth-child(2n+1) {
+      clear: both; }
+  .nth-phone-3 > *:nth-child(3n+1) {
+    clear: none; }
+  .nth-tablet-3 > * {
+    width: 33.3333333333%; }
+    .nth-tablet-3 > *:nth-child(3n+1) {
+      clear: both; }
+  .nth-phone-4 > *:nth-child(4n+1) {
+    clear: none; }
+  .nth-tablet-4 > * {
+    width: 25%; }
+    .nth-tablet-4 > *:nth-child(4n+1) {
+      clear: both; }
+  .nth-phone-5 > *:nth-child(5n+1) {
+    clear: none; }
+  .nth-tablet-5 > * {
+    width: 20%; }
+    .nth-tablet-5 > *:nth-child(5n+1) {
+      clear: both; }
+  .nth-phone-6 > *:nth-child(6n+1) {
+    clear: none; }
+  .nth-tablet-6 > * {
+    width: 16.6666666667%; }
+    .nth-tablet-6 > *:nth-child(6n+1) {
+      clear: both; } }
+
+@media (min-width: 1024px) {
+  .nth-desktop-1 > * {
+    clear: none;
+    width: 100%; }
+  .nth-phone-2 > *:nth-child(2n+1),
+  .nth-tablet-2 > *:nth-child(2n+1) {
+    clear: none; }
+  .nth-desktop-2 > * {
+    width: 50%; }
+    .nth-desktop-2 > *:nth-child(2n+1) {
+      clear: both; }
+  .nth-phone-3 > *:nth-child(3n+1),
+  .nth-tablet-3 > *:nth-child(3n+1) {
+    clear: none; }
+  .nth-desktop-3 > * {
+    width: 33.3333333333%; }
+    .nth-desktop-3 > *:nth-child(3n+1) {
+      clear: both; }
+  .nth-phone-4 > *:nth-child(4n+1),
+  .nth-tablet-4 > *:nth-child(4n+1) {
+    clear: none; }
+  .nth-desktop-4 > * {
+    width: 25%; }
+    .nth-desktop-4 > *:nth-child(4n+1) {
+      clear: both; }
+  .nth-phone-5 > *:nth-child(5n+1),
+  .nth-tablet-5 > *:nth-child(5n+1) {
+    clear: none; }
+  .nth-desktop-5 > * {
+    width: 20%; }
+    .nth-desktop-5 > *:nth-child(5n+1) {
+      clear: both; }
+  .nth-phone-6 > *:nth-child(6n+1),
+  .nth-tablet-6 > *:nth-child(6n+1) {
+    clear: none; }
+  .nth-desktop-6 > * {
+    width: 16.6666666667%; }
+    .nth-desktop-6 > *:nth-child(6n+1) {
+      clear: both; } }
+
+@media (min-width: 1200px) {
+  .nth-larger-desktop-1 > * {
+    clear: none;
+    width: 100%; }
+  .nth-phone-2 > *:nth-child(2n+1),
+  .nth-tablet-2 > *:nth-child(2n+1),
+  .nth-desktop-2 > *:nth-child(2n+1) {
+    clear: none; }
+  .nth-larger-desktop-2 > * {
+    width: 50%; }
+    .nth-larger-desktop-2 > *:nth-child(2n+1) {
+      clear: both; }
+  .nth-phone-3 > *:nth-child(3n+1),
+  .nth-tablet-3 > *:nth-child(3n+1),
+  .nth-desktop-3 > *:nth-child(3n+1) {
+    clear: none; }
+  .nth-larger-desktop-3 > * {
+    width: 33.3333333333%; }
+    .nth-larger-desktop-3 > *:nth-child(3n+1) {
+      clear: both; }
+  .nth-phone-4 > *:nth-child(4n+1),
+  .nth-tablet-4 > *:nth-child(4n+1),
+  .nth-desktop-4 > *:nth-child(4n+1) {
+    clear: none; }
+  .nth-larger-desktop-4 > * {
+    width: 25%; }
+    .nth-larger-desktop-4 > *:nth-child(4n+1) {
+      clear: both; }
+  .nth-phone-5 > *:nth-child(5n+1),
+  .nth-tablet-5 > *:nth-child(5n+1),
+  .nth-desktop-5 > *:nth-child(5n+1) {
+    clear: none; }
+  .nth-larger-desktop-5 > * {
+    width: 20%; }
+    .nth-larger-desktop-5 > *:nth-child(5n+1) {
+      clear: both; }
+  .nth-phone-6 > *:nth-child(6n+1),
+  .nth-tablet-6 > *:nth-child(6n+1),
+  .nth-desktop-6 > *:nth-child(6n+1) {
+    clear: none; }
+  .nth-larger-desktop-6 > * {
+    width: 16.6666666667%; }
+    .nth-larger-desktop-6 > *:nth-child(6n+1) {
+      clear: both; } }
