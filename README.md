@@ -10,7 +10,7 @@ Biblioteca em SCSS que permite a utilização de várias colunas com alturas dif
 ## Utilização
 
 Você pode adicionar as classes ao seu elemento com a seguinte estrutura:
-- [Prefixo da resolução desejada]-[Quantidade de colunas esta resolução]
+- [Prefixo da resolução desejada]-[Quantidade de colunas nesta resolução]
 
 Tudo deve funcionar muito bem!
 
