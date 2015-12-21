@@ -16,7 +16,7 @@ Tudo deve funcionar muito bem!
 
 Por exemplo:
 ~~~html
-<ul class="nth-xs-2 nth-sm-4 nth-md-3 nth-larger-lg-4"
+<ul class="nth-phone-2 nth-tablet-4 nth-desktop-3 nth-larger-desktop-4"
 ~~~
 
 Nesse caso, serão exibidas 2 colunas na resolução de smarphone, 4 colunas na resolução de tablet, 3 colunas em monitores pequenos e 4 colunas em monitores maiores.
