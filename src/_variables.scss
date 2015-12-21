@@ -1,11 +1,15 @@
-$nth-phone-prefix: 			nth-phone !default;
-$nth-tablet-prefix: 		nth-tablet !default;
-$nth-desktop-prefix: 		nth-desktop !default;
+$nth-phone-prefix:          nth-phone !default;
+$nth-tablet-prefix:         nth-tablet !default;
+$nth-desktop-prefix:        nth-desktop !default;
 $nth-larger-desktop-prefix: nth-larger-desktop !default;
 
+$bootstrap-phone-prefix:          nth-xs !default;
+$bootstrap-tablet-prefix:         nth-sm !default;
+$bootstrap-desktop-prefix:        nth-md !default;
+$bootstrap-larger-desktop-prefix: nth-lg !default;
 
 $nth-tablet-width-min: 768px !default;
 $nth-desktop-width-min: 1024px !default;
 $nth-larger-desktop-width-min: 1200px !default;
 
-$max-items-loop: 6 !default;
+$max-items-loop: 12 !default;

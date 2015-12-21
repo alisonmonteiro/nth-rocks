@@ -10,11 +10,11 @@ Biblioteca em SCSS que permite a utilização de várias colunas com alturas dif
 ## Utilização
 
 Você pode adicionar as classes ao seu elemento com a seguinte estrutura:
-- [Prefixo da resolução desejada]-[Quantidade de colunas esta resolução]
+- [Prefixo da resolução desejada]-[Quantidade de colunas nesta resolução]
 
 Tudo deve funcionar muito bem!
 
-Por exemplo: 
+Por exemplo:
 ~~~html
 <ul class="nth-phone-2 nth-tablet-4 nth-desktop-3 nth-larger-desktop-4"
 ~~~
