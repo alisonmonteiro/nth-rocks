@@ -1,6 +1,6 @@
 # nth-rocks
 
-![](https://img.shields.io/npm/v/nth-rocks.svg)
+[![npm status](https://img.shields.io/npm/v/nth-rocks.svg)](https://www.npmjs.com/package/nth-rocks)
 
 Biblioteca em SCSS que permite a utilização de várias colunas com alturas diferentes, sem que as mesmas quebrem, ou se comportem de forma inadequada.
 
