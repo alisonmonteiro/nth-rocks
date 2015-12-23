@@ -1,0 +1,23 @@
+@mixin nth-layout-items($items) {
+    $width: 100% / $items;
+
+    @if $items == 1 {
+        clear: none;
+        width: 100%;
+    } @else {
+        width: $width;
+
+        &:nth-child(#{$items}n+1) {
+            clear: both;
+        }
+    }
+}
+
+
+@mixin nth-cleanup-layout-items($items) {
+    @if $items > 1 {
+        &:nth-child(#{$items}n+1) {
+            clear: none;
+        }
+    }
+}
