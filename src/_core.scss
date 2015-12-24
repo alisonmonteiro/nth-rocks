@@ -1,91 +1,91 @@
 $items: 1;
-@while $items <= $max-items-loop  {
-	.#{$nth-phone-prefix}-#{$items},
-	.#{$bootstrap-phone-prefix}-#{$items} {
-		> * {
+@while $items <= $max-items-loop {
+    .#{$nth-phone-prefix}-#{$items},
+    .#{$bootstrap-phone-prefix}-#{$items} {
+        > * {
             float: left;
 
-			@include nth-layout-items($items);
-		}
-	}
+            @include nth-layout-items($items);
+        }
+    }
 
-	$items: $items + 1;
+    $items: $items + 1;
 }
 
 @media (min-width: $nth-tablet-width-min) {
 
-	$items: 1;
-	@while $items <= $max-items-loop  {
-		.#{$nth-phone-prefix}-#{$items},
-		.#{$bootstrap-phone-prefix}-#{$items} {
-			> * {
+    $items: 1;
+    @while $items <= $max-items-loop {
+        .#{$nth-phone-prefix}-#{$items},
+        .#{$bootstrap-phone-prefix}-#{$items} {
+            > * {
                 @include nth-cleanup-layout-items($items);
-			}
-		}
+            }
+        }
 
-		.#{$nth-tablet-prefix}-#{$items},
-		.#{$bootstrap-tablet-prefix}-#{$items} {
-			> * {
+        .#{$nth-tablet-prefix}-#{$items},
+        .#{$bootstrap-tablet-prefix}-#{$items} {
+            > * {
                 @include nth-layout-items($items);
-			}
+            }
 
-		}
+        }
 
-		$items: $items + 1;
-	}
+        $items: $items + 1;
+    }
 }
 
 @media (min-width: $nth-desktop-width-min) {
 
-	$items: 1;
-	@while $items <= $max-items-loop  {
-		.#{$nth-phone-prefix}-#{$items},
-		.#{$bootstrap-phone-prefix}-#{$items},
-		.#{$nth-tablet-prefix}-#{$items},
-		.#{$bootstrap-tablet-prefix}-#{$items} {
-			> * {
+    $items: 1;
+    @while $items <= $max-items-loop {
+        .#{$nth-phone-prefix}-#{$items},
+        .#{$bootstrap-phone-prefix}-#{$items},
+        .#{$nth-tablet-prefix}-#{$items},
+        .#{$bootstrap-tablet-prefix}-#{$items} {
+            > * {
                 @include nth-cleanup-layout-items($items);
-			}
-		}
+            }
+        }
 
-		.#{$nth-desktop-prefix}-#{$items},
-		.#{$bootstrap-desktop-prefix}-#{$items} {
-			$width: 100% / $items;
+        .#{$nth-desktop-prefix}-#{$items},
+        .#{$bootstrap-desktop-prefix}-#{$items} {
+            $width: 100% / $items;
 
-			> * {
+            > * {
                 @include nth-layout-items($items);
-			}
+            }
 
-		}
+        }
 
-		$items: $items + 1;
-	}
+        $items: $items + 1;
+    }
 }
 
 @media (min-width: $nth-larger-desktop-width-min) {
 
-	$items: 1;
-	@while $items <= $max-items-loop  {
-		.#{$nth-phone-prefix}-#{$items},
-		.#{$bootstrap-phone-prefix}-#{$items},
-		.#{$nth-tablet-prefix}-#{$items},
-		.#{$bootstrap-tablet-prefix}-#{$items},
-		.#{$nth-desktop-prefix}-#{$items},
-		.#{$bootstrap-desktop-prefix}-#{$items} {
-			> * {
+    $items: 1;
+    @while $items <= $max-items-loop {
+        .#{$nth-phone-prefix}-#{$items},
+        .#{$bootstrap-phone-prefix}-#{$items},
+        .#{$nth-tablet-prefix}-#{$items},
+        .#{$bootstrap-tablet-prefix}-#{$items},
+        .#{$nth-desktop-prefix}-#{$items},
+        .#{$bootstrap-desktop-prefix}-#{$items} {
+            > * {
                 @include nth-cleanup-layout-items($items);
-			}
-		}
+            }
+        }
 
-		.#{$nth-larger-desktop-prefix}-#{$items},
-		.#{$bootstrap-larger-desktop-prefix}-#{$items} {
-			$width: 100% / $items;
+        .#{$nth-larger-desktop-prefix}-#{$items},
+        .#{$bootstrap-larger-desktop-prefix}-#{$items} {
+            $width: 100% / $items;
 
-			> * {
+            > * {
                 @include nth-layout-items($items);
-			}
-		}
+            }
+        }
 
-		$items: $items + 1;
-	}
+        $items: $items + 1;
+    }
 }
