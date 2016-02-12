@@ -1,0 +1,21 @@
+{
+  "name": "nth-rocks",
+  "description": "Don't break your lists",
+  "main": "src/nth-rocks.scss",
+  "authors": [
+    "Alison Monteiro <alisonmonteiro.10@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "lists",
+    "break",
+    "bootstrap",
+    "scss"
+  ],
+  "homepage": "https://github.com/alisonmonteiro/nth-rocks",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ]
+}
