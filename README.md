@@ -30,5 +30,4 @@ Veja um exemplo [aqui](https://github.com/alisonmonteiro/nth-rocks/blob/master/e
 
 ## TODO
 - [ ] Add github-page
-- [ ] Add bower.json
 - [ ] Add opção `nth-rocks.less`
